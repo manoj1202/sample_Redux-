@@ -1,7 +1,7 @@
 import React,{Component} from 'react';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
-import {selectUser} from './action/index';
+import {selectUser} from '../action/index';
 
 class UserList extends Component{
     createListItem(){
@@ -26,7 +26,7 @@ function mapStateToProps(state){
 }
 
 function matchDispatchToProps(dispatch){
-        return bindActionCreators({selectUser : selectUser}, dispatch)
+        return bindActionCreators({selectUser: selectUser}, dispatch)
 }
 
 export default connect(mapStateToProps, matchDispatchToProps)(UserList);
