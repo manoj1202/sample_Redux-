@@ -5,8 +5,10 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <h1>Sample Redux</h1>
+      <div >
+        <h1>User List:</h1>
+        <hr />
+        <h1>User Details:</h1>
       </div>
     );
   }
