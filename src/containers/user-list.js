@@ -1,4 +1,6 @@
-import React,{Component} from 'react'
+import React,{Component} from 'react';
+import {connect} from 'react-redux';
+import {bindActionCreators} from 'redux';
 
 class UserList extends Component{
     render(){
@@ -11,4 +13,10 @@ class UserList extends Component{
         );
     }
 }
-export default UserList
+function mapStateToProps(state){
+    return{
+        users: state.users
+    }
+}
+
+export default connect(mapStateToProps)(UserList);
