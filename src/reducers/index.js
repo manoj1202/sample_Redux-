@@ -1,6 +1,6 @@
-import {combinedReducers} from 'redux';
+import {combineReducers} from 'redux';
 import UserReducers from './reduceruser';
 
-const allReducers = combinedReducers({
+const allReducers = combineReducers({
     users: UserReducers
 });
